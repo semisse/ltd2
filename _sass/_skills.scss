@@ -9,30 +9,30 @@
 .skills h3 {
     text-align: center;
     font-size: 1rem;
-    color: var(--white);
+    color: $white;
 }
 
 .skills .chart {
     margin: 0 auto;
-    margin-bottom: calc(var(--base-unit) * 5);
+    margin-bottom: calc(#{$base-unit} * 5);
 }
 
 .skills .chart .skill {
-    margin: calc(var(--base-unit) * 2) 0;
+    margin: calc(#{$base-unit} * 2) 0;
     display: flex;
     flex-direction: column-reverse;
 }
 
 .skills .chart .skill .circle {
-    height: calc(var(--base-unit) * 20);
-    width: calc(var(--base-unit) * 20);
+    height: calc(#{$base-unit} * 20);
+    width: calc(#{$base-unit} * 20);
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--nazare);
+    border: 1px solid $nazare;
     border-radius: 50%;
-    margin-bottom: calc(var(--base-unit) * 2);
+    margin-bottom: calc(#{$base-unit} * 2);
 }
 
 .skills .chart .skill .circle .percentage {
@@ -42,7 +42,7 @@
 
 .skills .chart .skill h4 {
     font-size: 150%;
-    color: var(--white);
+    color: $white;
     text-align: center;
     margin: 0 auto;
 }

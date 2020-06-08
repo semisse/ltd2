@@ -1,15 +1,15 @@
 .about h2 {
-    margin-bottom: calc(var(--base-unit) * 5);
+    margin-bottom: calc(#{$base-unit} * 5);
 }
 
 .experience dl dt {
     font-style: italic;
     font-weight: normal;
-    color: var(--nazare);
+    color: $nazare;
 }
 
 .experience dl {
-    margin-bottom: calc(var(--base-unit) * 5);
+    margin-bottom: calc(#{$base-unit} * 5);
 }
 
 .experience h3 {
@@ -26,7 +26,7 @@
 }
 
 .clients li {
-    margin-bottom: calc(var(--base-unit) * 5);
+    margin-bottom: calc(#{$base-unit} * 5);
 }
 
 @media (min-width: 40rem) {

@@ -1,26 +1,18 @@
 :root {
-    --black: #151515;
-    --white: #F9F7E8;
-    --purple: #39304A;
-    --cream: #E1D89F;
-    --salmon: #FB9F89;
-    --nazare: #63C0AD;
-    --base-unit: 8px;
-    --font-default: freight-big-pro, serif;
     font-size: 1.2rem;
     letter-spacing: .02rem;
 }
 
 body {
-    background: var(--black, black);
-    font-family: var(--font-default, serif);
-    color: var(--white, white);
+    background: $black;
+    font-family: $font-default;
+    color: $white;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     font-style: italic;
-    color: var(--nazare);
+    color: $nazare;
     text-align: center;
 }
 
@@ -29,29 +21,29 @@ h1 {
     font-size: 450%;
     font-style: italic;
     line-height: .8em;
-    color: var(--nazare);
+    color: $nazare;
     text-align: center;
 }
 
 h2 {
     font-size: 300%;
     line-height: .9em;
-    color: var(--cream);
+    color: $cream;
 }
 
 h3 {
     font-size: 150%;
-    color: var(--cream);
+    color: $cream;
 }
 
 p {
-    color: var(--black);
+    color: $black;
     letter-spacing: .02rem;
     line-height: 1.5rem;
 }
 
 a {
-    color: var(--black);
+    color: $black;
     transition: filter .2s;
 }
 
@@ -65,13 +57,13 @@ img {
 }
 
 section {
-    margin: calc(var(--base-unit) * 15) 0;
-    padding: 0 calc(var(--base-unit) * 2.5);
+    margin: calc(#{$base-unit} * 15);
+    padding: 0 calc(#{$base-unit} * 2.5);
 }
 
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 calc(var(--base-unit) * 2);
+    padding: 0 calc(#{$base-unit} * 2);
     overflow-x: hidden;
 }

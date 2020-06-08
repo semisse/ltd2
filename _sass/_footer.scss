@@ -1,10 +1,10 @@
 footer {
-    margin: calc(var(--base-unit) * 5) 0;
+    margin: calc(#{$base-unit} * 5) 0;
     text-align: center
 }
 
 footer img {
-    margin: calc(var(--base-unit) * 5) 0;
+    margin: calc(#{$base-unit} * 5) 0;
 }
 
 footer p {

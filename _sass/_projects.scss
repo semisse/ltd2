@@ -1,6 +1,6 @@
 .projects h2 {
     text-align: center;
-    color: var(--cream)
+    color: $cream;
 }
 
 .projects h3 {
@@ -13,7 +13,7 @@
 
 .project {
     max-width: 100%;
-    margin: calc(var(--base-unit) * 10) 0;
+    margin: calc(#{$base-unit} * 10) 0;
 }
 
 .project .image {
@@ -21,11 +21,11 @@
 }
 
 .project img {
-    margin-bottom: calc(var(--base-unit) * 5);
+    margin-bottom: calc(#{$base-unit} * 5);
 }
 
 .project p {
-    color: var(--white);
+    color: $white;
 }
 
 .project .description ul {
@@ -35,11 +35,11 @@
 .project .description li {
     display: inline-block;
     font-size: .75rem;
-    color: var(--salmon);
-    margin: calc(var(--base-unit) / 2) 0;
-    padding: var(--base-unit) calc(var(--base-unit) * 2);
-    border: 1px solid var(--salmon);
-    border-radius: calc(var(--base-unit) * 5);
+    color: $salmon;
+    margin: calc(#{$base-unit} / 2) 0;
+    padding: #{$base-unit} calc(#{$base-unit} * 2);
+    border: 1px solid $salmon;
+    border-radius: calc(#{$base-unit} * 5);
 }
 
 @media (min-width: 40rem) {
@@ -50,6 +50,6 @@
         flex: 50%
     }
     .description {
-        padding-left: calc(var(--base-unit) * 5);
+        padding-left: calc(#{$base-unit} * 5);
     }
 }
