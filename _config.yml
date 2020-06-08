@@ -22,13 +22,13 @@ title: Samuel Fialho
 email: samuel.fialho@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my page. Here you can check of the projects I've been working on
-baseurl: "ltd2" # the subpath of your site, e.g. /blog
+baseurl: "/ltd2" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: samuelfialho
 github_username:  semisse
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
