@@ -1,0 +1,55 @@
+.projects h2 {
+    text-align: center;
+    color: var(--cream)
+}
+
+.projects h3 {
+    text-align: left;
+    font-size: 150%;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 125%;
+}
+
+.project {
+    max-width: 100%;
+    margin: calc(var(--base-unit) * 10) 0;
+}
+
+.project .image {
+    text-align: center;
+}
+
+.project img {
+    margin-bottom: calc(var(--base-unit) * 5);
+}
+
+.project p {
+    color: var(--white);
+}
+
+.project .description ul {
+    padding: 0
+}
+
+.project .description li {
+    display: inline-block;
+    font-size: .75rem;
+    color: var(--salmon);
+    margin: calc(var(--base-unit) / 2) 0;
+    padding: var(--base-unit) calc(var(--base-unit) * 2);
+    border: 1px solid var(--salmon);
+    border-radius: calc(var(--base-unit) * 5);
+}
+
+@media (min-width: 40rem) {
+    .project {
+        display: flex;
+    }
+    .image, .description {
+        flex: 50%
+    }
+    .description {
+        padding-left: calc(var(--base-unit) * 5);
+    }
+}

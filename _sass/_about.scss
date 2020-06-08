@@ -1,0 +1,50 @@
+.about h2 {
+    margin-bottom: calc(var(--base-unit) * 5);
+}
+
+.experience dl dt {
+    font-style: italic;
+    font-weight: normal;
+    color: var(--nazare);
+}
+
+.experience dl {
+    margin-bottom: calc(var(--base-unit) * 5);
+}
+
+.experience h3 {
+    text-align: left;
+}
+
+.clients ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clients li {
+    margin-bottom: calc(var(--base-unit) * 5);
+}
+
+@media (min-width: 40rem) {
+    .about {
+        display: flex;
+        justify-content: center;
+    }
+    .experience {
+        flex-basis: 60%;
+    }
+    .clients {
+        flex-basis: 40%;
+    }
+    .experience h2, .clients h2 {
+        text-align: left;
+    }
+    .clients ul {
+        height: 100%;
+        align-items: flex-start;
+    }
+}

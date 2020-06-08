@@ -1,0 +1,68 @@
+.skills {
+    margin: 0 auto;
+}
+
+.skills h2 {
+    text-align: center;
+}
+
+.skills h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.skills .chart {
+    margin: 0 auto;
+    margin-bottom: calc(var(--base-unit) * 5);
+}
+
+.skills .chart .skill {
+    margin: calc(var(--base-unit) * 2) 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.skills .chart .skill .circle {
+    height: calc(var(--base-unit) * 20);
+    width: calc(var(--base-unit) * 20);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--nazare);
+    border-radius: 50%;
+    margin-bottom: calc(var(--base-unit) * 2);
+}
+
+.skills .chart .skill .circle .percentage {
+    font-style: italic;
+    font-size: 200%;
+}
+
+.skills .chart .skill h4 {
+    font-size: 150%;
+    color: var(--white);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skills .card {
+    margin: 0 auto;
+}
+
+@media (min-width: 40rem) {
+    .skills .chart {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skills .chart .skill {
+        min-width: 50%;
+    }
+}
+
+@media (min-width: 45rem) {
+    .skills .chart .skill {
+        min-width: 25%;
+    }
+}

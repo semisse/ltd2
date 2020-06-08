@@ -1,0 +1,134 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: calc(var(--base-unit) * 2) 0;
+    margin-bottom: calc(var(--base-unit) * 5);
+}
+
+.logo {
+    z-index: 200;
+}
+
+.menu {
+    height: calc(var(--base-unit) * 5);
+    width: calc(var(--base-unit) * 5);
+}
+
+.burger {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.burger>span {
+    height: 1px;
+    width: calc(var(--base-unit) * 4);
+    display: block;
+    background-color: var(--nazare);
+    margin-bottom: var(--base-unit);
+    float: right;
+}
+
+.burger>span:last-child {
+    width: calc(var(--base-unit) * 2);
+    margin-bottom: 0;
+}
+
+.navigation {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--white);
+    text-align: right;
+    transform: translateY(-200%);
+    transition: transform .4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.open {
+    transform: translateY(0%);
+    transition: transform .4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.navigation ul {
+    padding: 0;
+}
+
+.navigation li {
+    font-size: 4em;
+    font-style: italic;
+    color: var(--black);
+    list-style: none;
+}
+
+.navigation li.active::before {
+    color: var(--nazare);
+}
+
+.navigation li.active a {
+    color: var(--nazare);
+}
+
+.navigation li a {
+    color: var(--black);
+}
+
+.close {
+    height: calc(var(--base-unit) * 5);
+    width: calc(var(--base-unit) * 5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.close>span {
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: var(--black);
+    transform: rotate(45deg);
+}
+
+.close>span:last-child {
+    transform: rotate(-45deg);
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social>span {
+    padding: var(--base-unit);
+}
+
+.social img {
+    transition: filter .2s;
+}
+
+.social img:hover {
+    filter: invert(0.5)
+}
+
+@media (min-width: 40rem) {
+    .navigation li {
+        font-size: 500%;
+        text-align: center;
+    }
+    .navigation li {
+        font-size: 500%;
+        text-align: center;
+    }
+    .social {
+        justify-content: center;
+    }
+    .navigation p {
+        text-align: center;
+    }
+}
