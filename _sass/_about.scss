@@ -30,7 +30,8 @@
 }
 
 @media (min-width: 40rem) {
-    .about {
+    .additional-information {
+        clear:both;
         display: flex;
         justify-content: center;
     }

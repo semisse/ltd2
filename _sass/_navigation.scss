@@ -11,6 +11,10 @@
     z-index: 200;
 }
 
+.logo a:hover, .menu a:hover {
+    filter: none;
+}
+
 .menu {
     height: calc(#{$base-unit} * 5);
     width: calc(#{$base-unit} * 5);
@@ -115,7 +119,7 @@
 }
 
 .social img:hover {
-    filter: invert(0.5)
+    filter: invert(0.5);
 }
 
 @media (min-width: 40rem) {

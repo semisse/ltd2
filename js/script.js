@@ -13,16 +13,3 @@ if (cross) {
         navigation.classList.remove("open");
     });
 }
-
-const navElement = document.body.querySelector("nav");
-const listItem = navElement.children[0].children;
-for (let i = 0; i < listItem.length; i++) {
-    const link = listItem[i].getElementsByTagName("a");
-    link[0].addEventListener("click", (e) => {
-        e.preventDefault();
-        const destination = link[0].innerHTML;
-        navigation.classList.remove("open");
-        const section = document.getElementById(destination.toLowerCase());
-        section.scrollIntoView();
-    });
-}
