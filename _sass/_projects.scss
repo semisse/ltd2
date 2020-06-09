@@ -1,3 +1,7 @@
+.projects .banner {
+    @include bannerBackground('../assets/img/portfolio.jpg');
+}
+
 .projects h2 {
     text-align: center;
     color: $cream;

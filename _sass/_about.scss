@@ -2,6 +2,10 @@
     margin-bottom: calc(#{$base-unit} * 5);
 }
 
+.about .banner {
+    @include bannerBackground('../assets/img/nazare.jpg');
+}
+
 .experience dl dt {
     font-style: italic;
     font-weight: normal;
