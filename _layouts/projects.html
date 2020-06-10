@@ -5,80 +5,28 @@ layout: default
     <div class="banner">
         <h1>Portfolio</h1>
     </div>
-
     <h2>List of curated projects</h2>
-
-    <div class="project">
-        <div class="image">
-            <img src="{{site.baseurl}}/assets/img/projects/cmnazare01.png"
-                srcset="{{site.baseurl}}/assets/img/projects/cmnazare01.png 1x, {{site.baseurl}}/assets/img/projects/cmnazare01@2x.png 2x"
-                alt="Município da Nazaré rebranding">
-        </div>
-        <div class="description">
-            <h3>Designing the identity of an entire town</h3>
-            <p>What to do when the challenge is to design the identity of one of the most famous Portuguese
-                towns? When McNamara rode that huge wave all eyes were focused on Nazaré, a small place with
-                an
-                incredible character and spirit. That was exactly the essence of the project: to look for a
-                common symbol that could represent every citizen and to modernize the look of the town.
-            </p>
-            <ul aria-label="roles played during this project">
-                <li>Creative Direction</li>
-                <li>UX Research</li>
-                <li>UI Design</li>
-                <li>Frontend Development</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="project">
-        <div class="image">
-            <img src="{{site.baseurl}}/assets/img/projects/cibv.png" srcset="{{site.baseurl}}/assets/img/projects/cibv.png 1x, {{site.baseurl}}/assets/img/projects/cibv@2x.png 2x"
-                alt="CIBV iOS version UI Design">
-        </div>
-        <div class="description">
-            <h3>How to engage with a complex history event</h3>
-            <p>French invasions in Portugal were an important fact. CIBV is a museum that aims not only to
-                tell
-                all the historical aspects of it, but also to explore new explanations for what happened
-                specifically in Vimeiro. To add an extra layer of interactivity to the physical structure,
-                we've
-                created a mobile app to further extend the user experience. To do it, we apply a Design
-                Thinking
-                approach, involving, from the very beginning, four groups of people, segmented to represent
-                our
-                future users. The app was developed to iOS and Android.
-            </p>
-
-            <ul aria-label="roles played during this project">
-                <li>Creative Direction</li>
-                <li>UX Research</li>
-                <li>UI Design</li>
-                <li>Backend Development</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="project">
-        <div class="image">
-            <img src="{{site.baseurl}}/assets/img/projects/atlantico.png"
-                srcset="{{site.baseurl}}/assets/img/projects/atlantico.png 1x, {{site.baseurl}}/assets/img/projects/atlantico@2x.png 2x"
-                alt="Atlantico Bank welcome kit">
-        </div>
-        <div class="description">
-            <h3>Telling a story within a box</h3>
-            <p>When Atlantico Bank was expanding in Europe it was important to reinforce and sustain the
-                company's culture and values. To do it, I was invited to think about a new strategy to
-                welcome
-                new employees. Taking into account all the bank values, I've developed a concept based on
-                the
-                advent calendar. Following a certain narrative, people would open some little boxes in which
-                were printed some key word definitions that were also connected to their on boarding in the
-                company. In each little box, there was an surprise object.
-            </p>
-            <ul aria-label="roles played during this project">
-                <li>Creative Direction</li>
-            </ul>
-        </div>
-    </div>
+    <ul>
+        {% for post in site.posts %}
+          <li>
+            <div class="project">
+                <div class="image">
+                    <img src="{{site.baseurl}}/{{post.image}}"
+                        srcset="{{site.baseurl}}/{{post.image}} 1x, {{site.baseurl}}/{{post.image}}@2x.png 2x"
+                        alt="{{post.alt}}"
+                    >
+                </div>
+                <div class="description">
+                    <h3>{{post.title}}</h3>
+                    <p>{{post.content}}</p>
+                    <ul aria-label="roles played during this project">
+                        {% for role in post.roles %}
+                            <li>{{ role }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
 </section>
