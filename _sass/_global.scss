@@ -123,7 +123,7 @@ button:hover {
 }
 
 
-@mixin bannerBackground($image) {
+@mixin bannerBackground($image, $imageRetina) {
     &:before {
         content: '';
         position: absolute;
@@ -133,8 +133,14 @@ button:hover {
         bottom: 0;
         left: 0;
         background-image: url($image);
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         z-index: -1;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        &:before {
+            background-image: url($imageRetina);
+        }
     }
 }

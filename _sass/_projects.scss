@@ -1,5 +1,5 @@
 .projects .banner {
-    @include bannerBackground('../assets/img/projects.jpg');
+    @include bannerBackground('../assets/img/projects.jpg', '../assets/img/projects@2x.jpg');
 }
 
 .projects h2 {

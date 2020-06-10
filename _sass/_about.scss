@@ -3,7 +3,7 @@
 }
 
 .about .banner {
-    @include bannerBackground('../assets/img/about.jpg');
+    @include bannerBackground('../assets/img/about.jpg', '../assets/img/about@2x.jpg');
 }
 
 .experience dl dt {

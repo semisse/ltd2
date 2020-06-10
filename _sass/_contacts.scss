@@ -1,5 +1,5 @@
 .contacts .banner {
-    @include bannerBackground('../assets/img/contacts.jpg');
+    @include bannerBackground('../assets/img/contacts.jpg', '../assets/img/contacts@2x.jpg');
 }
 
 .contacts .two-column > div {
