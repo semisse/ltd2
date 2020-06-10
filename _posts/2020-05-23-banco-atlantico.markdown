@@ -1,6 +1,6 @@
 ---
 title: Telling a story within a box
-image: assets/img/projects/atlantico.png
+image: assets/img/projects/atlantico
 alt: Atlantico Bank welcome kit
 roles:
     - Creative Direction

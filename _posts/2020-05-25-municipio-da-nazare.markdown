@@ -1,6 +1,6 @@
 ---
 title: Designing the identity of an entire town
-image: /assets/img/projects/cmnazare01.png
+image: /assets/img/projects/cmnazare01
 roles:
     - Creative Direction
     - UX Research

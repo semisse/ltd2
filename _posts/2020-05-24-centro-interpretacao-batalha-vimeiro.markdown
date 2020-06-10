@@ -1,6 +1,6 @@
 ---
 title: How to engage with a complex history event
-image: assets/img/projects/cibv.png
+image: assets/img/projects/cibv
 alt: CIBV iOS version UI Design
 roles:
     - Creative Direction
