@@ -4,9 +4,6 @@ image: assets/img/projects/atlantico
 alt: Atlantico Bank welcome kit
 roles:
     - Creative Direction
-    - UX Research
-    - UI Design
-    - Backend Development
 ---
 When Atlantico Bank was expanding in Europe it was important to reinforce and sustain the
 company's culture and values. To do it, I was invited to think about a new strategy to
