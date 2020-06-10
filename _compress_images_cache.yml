@@ -32,3 +32,9 @@ assets/img/logo.svg: logo.svg
 assets/img/sam.png: sam.png
 assets/img/portfolio@2x.jpg: portfolio@2x.jpg
 assets/img/nazare@2x.jpg: nazare@2x.jpg
+assets/img/about@2x.jpg: about@2x.jpg
+assets/img/projects.jpg: projects.jpg
+assets/img/contacts@2x.jpg: contacts@2x.jpg
+assets/img/projects@2x.jpg: projects@2x.jpg
+assets/img/contacts.jpg: contacts.jpg
+assets/img/about.jpg: about.jpg

@@ -82,6 +82,47 @@ section {
     z-index: -1;
 }
 
+input, textarea {
+    width: 100%;
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid $nazare;
+    border-radius: #{$base-unit};
+    color: $white;
+    margin: 0 0 calc(#{$base-unit} * 4) 0;
+    padding: #{$base-unit};
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline-color: $cream;
+}
+
+textarea {
+    border-radius: #{$base-unit};
+    min-height: calc(#{$base-unit} * 30);
+}
+
+button {
+    font-size: .75rem;
+    color: $nazare;
+    margin: calc(#{$base-unit} / 2) 0;
+    padding: #{$base-unit} calc(#{$base-unit} * 6);
+    border: 1px solid $nazare;
+    border-radius: calc(#{$base-unit} * 5);
+    background: transparent;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $nazare;
+    color: $white;
+}
+
+
 @mixin bannerBackground($image) {
     &:before {
         content: '';

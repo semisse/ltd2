@@ -3,7 +3,7 @@
 }
 
 .about .banner {
-    @include bannerBackground('../assets/img/nazare.jpg');
+    @include bannerBackground('../assets/img/about.jpg');
 }
 
 .experience dl dt {
@@ -34,8 +34,7 @@
 }
 
 @media (min-width: 40rem) {
-    .additional-information {
-        clear:both;
+    .two-column {
         display: flex;
         justify-content: center;
     }

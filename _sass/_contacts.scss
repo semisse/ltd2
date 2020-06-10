@@ -1,0 +1,21 @@
+.contacts .banner {
+    @include bannerBackground('../assets/img/contacts.jpg');
+}
+
+.contacts .two-column > div {
+    padding: 0 calc(#{$base-unit} * 5);
+}
+
+h2 {
+    text-align: left;
+}
+
+.contacts form input {
+    display: block;
+}
+
+@media (min-width: 40rem) {
+    .contacts .two-column > div {
+        flex-basis: 50%;
+    }
+}

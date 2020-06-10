@@ -33,6 +33,9 @@ plugins:
   - jekyll-feed
   - jekyll-compress-images
 
+imageoptim:
+  - svgo: false
+
 sass:
   sass_dir: _sass
 
