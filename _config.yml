@@ -33,8 +33,8 @@ plugins:
   - jekyll-feed
   - jekyll-compress-images
 
-imageoptim:
-  - svgo: false
+compress_images:
+  images_path: "assets/img/**/*.{gif,png,jpg,jpeg}"
 
 sass:
   sass_dir: _sass
